@@ -14,9 +14,6 @@
     "icon": "assets/nodynamicfps/icon.png",
     "environment": "client",
     "entrypoints": {
-        "mm:early_risers": [
-            "xyz.bluspring.nodynamicfps.NoDynamicFps"
-        ],
         "sodium:config_api_user": [
             "xyz.bluspring.nodynamicfps.compat.sodium.SodiumConfigEntrypoint"
         ]
@@ -26,7 +23,8 @@
     ],
     "depends": {
         "fabricloader": ">=${loader_version}",
-        "minecraft": ">=26.1",
+        "minecraft": ">=26.2",
         "fabric-api": "*"
-    }
+    },
+    "accessWidener": "nodynamicfps.classtweaker"
 }

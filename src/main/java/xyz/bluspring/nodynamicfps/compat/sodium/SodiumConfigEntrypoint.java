@@ -14,6 +14,7 @@ public class SodiumConfigEntrypoint implements ConfigEntryPoint {
         builder.registerOwnModOptions()
             .registerOptionOverlay(LIMITER_OPTION, builder.createEnumOption(Identifier.fromNamespaceAndPath("nodynamicfps", "inactivity_fps_limit"), InactivityFpsLimit.class)
                 .setTooltip(s -> Component.translatable("options.inactivityFpsLimit." + s.getSerializedName() + ".tooltip"))
+                .setDefaultValue(InactivityFpsLimit.NO_DYNAMIC_FPS_DISABLED)
             );
     }
 }
